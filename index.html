@@ -7,7 +7,31 @@
   </head>
   <body>
     <!-- Navbar -->
-    <section class="w-screen mx-auto px-4 h-32 bg-slate-400">Navbar</section>
+    <section class="w-screen px-8 py-2 bg-slate-400">
+      <nav class="flex justify-between items-center">
+        <div class="text-white font-bold text-xl">My Portofolio</div>
+
+        <button id="menu-btn" class="block md:hidden p-1 rounded text-white hover:bg-slate-500">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+
+        <div id="nav-links" class="max-md:hidden flex space-x-6">
+          <a href="#about" class="text-white hover:text-gray-300 text-lg">About Me</a>
+          <a href="#skillsFramework" class="text-white hover:text-gray-300 text-lg">Skills Framework</a>
+          <a href="#projects" class="text-white hover:text-gray-300 text-lg">Projects</a>
+          <a href="#contactMe" class="text-white hover:text-gray-300 text-lg">Contact Me</a>
+        </div>
+      </nav>
+
+      <div id="dropdown" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out p-0 space-y-2 flex-col md:hidden bg-slate-600 rounded-2xl">
+        <a href="#about" class="block text-white hover:text-gray-300">About me</a>
+        <a href="#skillsFramework" class="block text-white hover:text-gray-300">Skills Framework</a>
+        <a href="#projects" class="block text-white hover:text-gray-300">Projects</a>
+        <a href="#contactMe" class="block text-white hover:text-gray-300">Contact Me</a>
+      </div>
+    </section>
 
     <!-- About Me -->
     <section class="w-screen mx-auto px-4 h-32 bg-green-400">About Me</section>
