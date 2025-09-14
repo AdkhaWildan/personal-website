@@ -1,3 +1,4 @@
+// Navbar Dropdown
 const btn = document.getElementById("menu-btn");
 const dropdown = document.getElementById("dropdown");
 
@@ -13,3 +14,40 @@ btn.addEventListener("click", () => {
   }
   isOpen = !isOpen;
 });
+
+// Modal
+const detailBtn = document.querySelector("#detail");
+const modal = document.querySelector("#modal");
+const modalContent = document.querySelector("#modalContent");
+const modalCertificate = document.querySelector("#modalCertificate");
+const certificateBtn = document.querySelector("#openCertificate");
+const certificateImg = document.querySelector("#certificateImg");
+const closeBtn = document.querySelector("#close");
+const minimizeBtn = document.querySelector("#minimize");
+
+detailBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  modalContent.classList.remove("hidden");
+  modalCertificate.classList.add("hidden");
+});
+
+certificateBtn.addEventListener("click", () => {
+  modalContent.classList.add("hidden");
+  modalCertificate.classList.remove("hidden");
+  certificateImg.src = "src/img/UiUx1.jpg";
+});
+
+minimizeBtn.addEventListener("click", () => {
+  modalContent.classList.remove("hidden");
+  modalCertificate.classList.add("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+});
+
+const images = ["src/img/UiUx1.jpg", "src/img/UiUx2.jpg"];
+
+let currentIndex = 0;

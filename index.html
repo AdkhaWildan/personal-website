@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Adkha Wildan</title>
     <link href="src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-100">
     <!-- Navbar -->
-    <section class="w-screen px-8 py-2 bg-slate-400">
+    <section class="px-8 py-2 bg-slate-400 fixed top-0 left-0 w-full z-50">
       <nav class="flex justify-between items-center">
         <div class="text-white font-bold text-xl">My Portofolio</div>
 
-        <button id="menu-btn" class="block md:hidden p-1 rounded text-white hover:bg-slate-500">
+        <button id="menu-btn" class="block md:hidden p-1 rounded text-white hover:bg-slate-500 relative">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
@@ -20,28 +21,28 @@
 
         <div id="nav-links" class="max-md:hidden flex space-x-6">
           <a href="#about" class="text-white hover:text-gray-300 text-lg">About Me</a>
-          <a href="#skillsFramework" class="text-white hover:text-gray-300 text-lg">Skills Framework</a>
+          <a href="#skills" class="text-white hover:text-gray-300 text-lg">Skills Framework</a>
           <a href="#projects" class="text-white hover:text-gray-300 text-lg">Projects</a>
-          <a href="#contactMe" class="text-white hover:text-gray-300 text-lg">Contact Me</a>
+          <a href="#contact" class="text-white hover:text-gray-300 text-lg">Contact Me</a>
         </div>
       </nav>
 
-      <div id="dropdown" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out p-0 space-y-2 flex-col md:hidden bg-slate-600 rounded-2xl">
+      <div id="dropdown" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out p-0 space-y-2 flex-col md:hidden bg-slate-600 rounded-2xl z-50">
         <a href="#about" class="block text-white hover:text-gray-300">About me</a>
-        <a href="#skillsFramework" class="block text-white hover:text-gray-300">Skills Framework</a>
+        <a href="#skills" class="block text-white hover:text-gray-300">Skills Framework</a>
         <a href="#projects" class="block text-white hover:text-gray-300">Projects</a>
-        <a href="#contactMe" class="block text-white hover:text-gray-300">Contact Me</a>
+        <a href="#contact" class="block text-white hover:text-gray-300">Contact Me</a>
       </div>
     </section>
 
     <!-- About Me -->
-    <section class="w-screen mx-auto px-4 bg-indigo-400 pb-8">
+    <section id="about" class="w-screen mx-auto px-4 bg-[#FDF0D5] py-8">
       <div class="px-16 py-8">
-        <h1 class="text-5xl font-bold text-center text-white w-full">About Me</h1>
+        <h1 class="text-5xl font-bold text-center text-[#669BBC] w-full">About Me</h1>
         <div class="mb-3 mt-0.5">
-          <div class="bg-amber-300 w-1/4 opacity-75 rounded h-1 mx-auto"></div>
+          <div class="bg-[#0FA3B1] w-1/4 max-md:w-1/2 opacity-75 rounded h-1 mx-auto"></div>
         </div>
-        <h2 class="text-3xl font-semibold mb-2 text-white text-center">Hello, I am Wildan, Nice to meet you</h2>
+        <h2 class="text-3xl font-semibold mb-2 text-[#669BBC] text-center">Hello, I am Wildan, Nice to meet you</h2>
 
         <div class="w-full">
           <div class="px-4 py-4">
@@ -49,7 +50,7 @@
           </div>
         </div>
 
-        <h3 class="mt-0.5text-lg font-semibold text-white text-center">
+        <h3 class="mt-0.5 text-xl font-semibold text-[#003049] text-center">
           A detail-oriented person with strong analytical and planning abilities, able to remain composed in challenging situations and make thoughtful
           decisions under pressure. Demonstrates effective time management and organizational skills, with a strong drive for learning and personal growth.
           Committed to completing every task with diligence and consistency, while continuously seeking opportunities to contribute through problem-solving and
@@ -57,73 +58,173 @@
         </h3>
       </div>
 
-      <div class="grid max-md:grid-cols-1 grid-cols-3 bg-amber-50 m-8 rounded-xl">
-        <div class="max-w shadow-lg m-3 px-4 py-4 bg-amber-50 border-2 border-blue-400 rounded-lg text-center">
-          <i class="fas fa-laptop-code text-blue-700 fa-5x mb-6 mx-auto"> </i>
-          <div class="p-4">
-            <p class="font-bold text-lg text-blue-700 md:text-xl mb-6">Programming</p>
-            <p class="text-blue-700 text-base mb-2">HTML</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">CSS</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">JavaScript</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">Tailwind CSS</p>
-            <hr class="text-blue-700 mb-2" />
-          </div>
-          <div class="px-2 py-4">
-            <button class="bg-blue-600 text-white hover:bg-blue-800 font-bold px-4 py-2 rounded shadow-md">Lihat Sertifikat</button>
+      <div class="grid max-md:grid-cols-1 grid-cols-2 mx-64 gap-x-16 justify-between items-stretch">
+        <div class="bg-amber-50 rounded-xl">
+          <div class="max-w h-full shadow-lg m-3 px-4 py-4 bg-[white] border-2 text-[#C1121F] rounded-lg text-center w-auto">
+            <div class="p-4">
+              <i class="fa-solid fa-person-walking-luggage text-[#C1121F] fa-5x mb-6 mx-auto"> </i>
+              <p class="font-bold text-lg text-[#C1121F] md:text-xl pb-8">Experiences</p>
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Campus ERP Project - Team Product</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+
+              <!-- Modals ERP-->
+              <div id="modal" class="hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <div id="modalContent">
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Campus ERP Project</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Sept 2022 - May 2024</h6>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
+                      <span class="font-semibold text-[#003049] mr-4">Role :</span>
+                      <ul class="list-disc list-outside text-[#003049]">
+                        <li>Started as staff, supporting system analysis and documentation, and assisting in UI/UX design and testing.</li>
+                        <li class="w-3/5">
+                          From Feb 2023, took full responsibility as the sole Product Designer, handling UI/UX design, bug fixing related to interface and flow,
+                          software testing, documentation, and collaboration with developers.
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
+                    <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
+                      <li>Designed user interfaces in Figma and documented system modules to guide development.</li>
+                      <li>Analyzed user needs by gathering feedback from lecturers and students to validate requirements.</li>
+                      <li>Collaborated with frontend and backend developers to define product flows and specifications.</li>
+                      <li>Conducted usability and feature testing to ensure the system met initial agreements.</li>
+                      <li>Assisted in fixing UI and system flow issues after development to keep the product running smoothly.</li>
+                    </ul>
+
+                    <button id="openCertificate" class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer">
+                      View certificate
+                    </button>
+                  </div>
+                  <div id="modalCertificate" class="hidden justify-center relative">
+                    <i
+                      id="minimize"
+                      class="absolute fa-solid fa-rectangle-xmark top-0 right-0 m-0 p-0 fa-2x text-red-500 hover:text-red-700 hover:cursor-pointer"
+                    ></i>
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                      <i id="prevBtn" class="ri-arrow-left-circle-fill text-gray-600 fa-2x absolute left-0 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                      <i id="nextBtn" class="ri-arrow-right-circle-fill text-gray-600 fa-2x absolute right-2 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Startup Campus - UI/UX Design</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Himaster - Organization Development</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">P!NGFEST - Media</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="max-w shadow-lg m-3 px-4 py-4 bg-amber-50 border-2 border-blue-400 rounded-lg text-center">
-          <i class="fas fa-laptop-code text-blue-700 fa-5x mb-6 mx-auto"> </i>
-          <div class="p-4">
-            <p class="font-bold text-lg text-blue-700 md:text-xl mb-6">Programming</p>
-            <p class="text-blue-700 text-base mb-2">HTML</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">CSS</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">JavaScript</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">Tailwind CSS</p>
-            <hr class="text-blue-700 mb-2" />
-          </div>
-          <div class="px-2 py-4">
-            <button class="bg-blue-600 text-white hover:bg-blue-800 font-bold px-4 py-2 rounded shadow-md">Lihat Sertifikat</button>
-          </div>
-        </div>
-        <div class="max-w shadow-lg m-3 px-4 py-4 bg-amber-50 border-2 border-blue-400 rounded-lg text-center">
-          <i class="fas fa-laptop-code text-blue-700 fa-5x mb-6 mx-auto"> </i>
-          <div class="p-4">
-            <p class="font-bold text-lg text-blue-700 md:text-xl mb-6">Programming</p>
-            <p class="text-blue-700 text-base mb-2">HTML</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">CSS</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">JavaScript</p>
-            <hr class="text-blue-700 mb-2" />
-            <p class="text-blue-700 text-base mb-2">Tailwind CSS</p>
-            <hr class="text-blue-700 mb-2" />
-          </div>
-          <div class="px-2 py-4">
-            <button class="bg-blue-600 text-white hover:bg-blue-800 font-bold px-4 py-2 rounded shadow-md">Lihat Sertifikat</button>
+
+        <div class="bg-amber-50 rounded-xl">
+          <div class="max-w h-full shadow-lg m-3 px-4 py-4 bg-[white] border-2 text-[#003049] rounded-lg text-center w-auto">
+            <div class="p-4">
+              <i class="fa-solid fa-laptop-code text-[#669BBC] fa-5x mb-6 mx-auto"> </i>
+              <p class="font-bold text-lg text-[#669BBC] md:text-xl pb-8">Programming Language</p>
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">HTML</span>
+                <span id="detail" class="hidden group-hover:block text-[#669BBC] font-sans"> Lihat Detail</span>
+              </p>
+
+              <!-- Modals ERP-->
+              <div id="modal" class="hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <div id="modalContent">
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Campus ERP Project</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Sept 2022 - May 2024</h6>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
+                      <span class="font-semibold text-[#003049] mr-4">Role :</span>
+                      <ul class="list-disc list-outside text-[#003049]">
+                        <li>Started as staff, supporting system analysis and documentation, and assisting in UI/UX design and testing.</li>
+                        <li class="w-3/5">
+                          From Feb 2023, took full responsibility as the sole Product Designer, handling UI/UX design, bug fixing related to interface and flow,
+                          software testing, documentation, and collaboration with developers.
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
+                    <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
+                      <li>Designed user interfaces in Figma and documented system modules to guide development.</li>
+                      <li>Analyzed user needs by gathering feedback from lecturers and students to validate requirements.</li>
+                      <li>Collaborated with frontend and backend developers to define product flows and specifications.</li>
+                      <li>Conducted usability and feature testing to ensure the system met initial agreements.</li>
+                      <li>Assisted in fixing UI and system flow issues after development to keep the product running smoothly.</li>
+                    </ul>
+
+                    <button id="openCertificate" class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer">
+                      View certificate
+                    </button>
+                  </div>
+                  <div id="modalCertificate" class="hidden justify-center relative">
+                    <i
+                      id="minimize"
+                      class="absolute fa-solid fa-rectangle-xmark top-0 right-0 m-0 p-0 fa-2x text-red-500 hover:text-red-700 hover:cursor-pointer"
+                    ></i>
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                      <i id="prevBtn" class="ri-arrow-left-circle-fill text-gray-600 fa-2x absolute left-0 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                      <i id="nextBtn" class="ri-arrow-right-circle-fill text-gray-600 fa-2x absolute right-2 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">CSS</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Java Script</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">PHP</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">SQL</span>
+                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Framework -->
-    <section class="w-screen mx-auto px-4 h-32 bg-yellow-400">Skills Framework</section>
+    <section id="skills" class="w-screen mx-auto px-4 h-32 bg-yellow-400">Skills Framework</section>
 
     <!-- Projects -->
-    <section class="w-screen mx-auto px-4 h-32 bg-red-400">Projects</section>
+    <section id="projects" class="w-screen mx-auto px-4 h-32 bg-red-400">Projects</section>
 
     <!-- Contact Me -->
-    <section class="w-screen mx-auto px-4 h-32 bg-purple-400">Contact Me</section>
+    <section id="contact" class="w-screen mx-auto px-4 h-32 bg-purple-400">Contact Me</section>
 
     <!-- Footer -->
     <section class="w-screen mx-auto px-4 h-32 bg-gray-400">Footer</section>
 
     <script src="src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
   </body>
 </html>
