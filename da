@@ -1,0 +1,29 @@
+[33mcommit d78550903a1bed9f5bae250b36a46c0b11fbab55[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/about-me[m[33m, [m[1;31morigin/feature/about-me[m[33m)[m
+Author: Adeka <adkhawildanrizqia@gmail.com>
+Date:   Sun Sep 14 23:59:28 2025 +0700
+
+    feat(about-me): Redesign and add template modals
+
+[33mcommit 40bed1a104b76043f2ae91fa7780d6d5623fcbe6[m
+Author: Adeka <adkhawildanrizqia@gmail.com>
+Date:   Sat Sep 13 19:10:42 2025 +0700
+
+    feat(about-me): core develop
+
+[33mcommit 95ca132c15ca5455ffddf082d004ed1f8a048469[m
+Author: Adeka <adkhawildanrizqia@gmail.com>
+Date:   Sat Sep 13 01:09:42 2025 +0700
+
+    feat(about-me): early design
+
+[33mcommit e70ed0cfcb02cf1cbbc51326ea94e90c756e1df2[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Adeka <adkhawildanrizqia@gmail.com>
+Date:   Fri Sep 12 21:33:51 2025 +0700
+
+    feat(navbar): completed
+
+[33mcommit 836baf5cb4c56c152dd916cb87daf43bfa0c397d[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Adeka <adkhawildanrizqia@gmail.com>
+Date:   Fri Sep 12 21:25:36 2025 +0700
+
+    initial commit

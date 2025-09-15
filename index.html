@@ -50,37 +50,36 @@
           </div>
         </div>
 
-        <h3 class="mt-0.5 text-xl font-semibold text-[#003049] text-center">
-          A detail-oriented person with strong analytical and planning abilities, able to remain composed in challenging situations and make thoughtful
-          decisions under pressure. Demonstrates effective time management and organizational skills, with a strong drive for learning and personal growth.
-          Committed to completing every task with diligence and consistency, while continuously seeking opportunities to contribute through problem-solving and
-          collaboration.
+        <h3 class="mt-0.5 text-xl font-semibold text-[#003049] text-center lg:mx-40">
+          I’m a detail-oriented and curious person who enjoys analyzing problems and turning insights into practical solutions. I like planning things out
+          carefully, breaking down complex ideas, and finding ways to make them work. I’m someone who learns steadily (even if progress is slow), I stay
+          consistent and keep pushing forward. I’m also eager to keep growing, learning new skills, and working with others to create meaningful results.
         </h3>
       </div>
 
-      <div class="grid max-md:grid-cols-1 grid-cols-2 mx-64 gap-x-16 justify-between items-stretch">
-        <div class="bg-amber-50 rounded-xl">
-          <div class="max-w h-full shadow-lg m-3 px-4 py-4 bg-[white] border-2 text-[#C1121F] rounded-lg text-center w-auto">
+      <div class="grid md:grid-cols-2 mx-32 max-sm:mx-8 max-md:mx-16 gap-x-8 lg:gap-x-32 justify-between items-stretch">
+        <div class="bg-amber-50 rounded-xl max-w h-full px-2 pt-2 pb-6">
+          <div class="max-w h-full shadow-lg px-2 pb-4 m-2 bg-[white] border-2 text-[#C1121F] rounded-lg text-center w-auto">
             <div class="p-4">
               <i class="fa-solid fa-person-walking-luggage text-[#C1121F] fa-5x mb-6 mx-auto"> </i>
               <p class="font-bold text-lg text-[#C1121F] md:text-xl pb-8">Experiences</p>
               <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
                 <span class="block group-hover:hidden">Campus ERP Project - Team Product</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+                <span class="detailBtn hidden group-hover:block text-[#780000] font-sans"> See Details</span>
               </p>
 
               <!-- Modals ERP-->
-              <div id="modal" class="hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto">
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
                 <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
                   <div id="modalContent">
-                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
-                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Campus ERP Project</h2>
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-4 right-4 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Campus ERP Project Intern</h2>
                     <h6 class="text-lg font-bold text-[#4895ef] mb-4">Sept 2022 - May 2024</h6>
                     <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
                       <span class="font-semibold text-[#003049] mr-4">Role :</span>
                       <ul class="list-disc list-outside text-[#003049]">
                         <li>Started as staff, supporting system analysis and documentation, and assisting in UI/UX design and testing.</li>
-                        <li class="w-3/5">
+                        <li class="max-md:w-3/5">
                           From Feb 2023, took full responsibility as the sole Product Designer, handling UI/UX design, bug fixing related to interface and flow,
                           software testing, documentation, and collaboration with developers.
                         </li>
@@ -95,7 +94,11 @@
                       <li>Assisted in fixing UI and system flow issues after development to keep the product running smoothly.</li>
                     </ul>
 
-                    <button id="openCertificate" class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer">
+                    <button
+                      id="openCertificate"
+                      data-certificates="src/img/erp.jpg"
+                      class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer"
+                    >
                       View certificate
                     </button>
                   </div>
@@ -116,59 +119,39 @@
               <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
               <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
                 <span class="block group-hover:hidden">Startup Campus - UI/UX Design</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
-              </p>
-              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
-              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
-                <span class="block group-hover:hidden">Himaster - Organization Development</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
-              </p>
-              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
-              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
-                <span class="block group-hover:hidden">P!NGFEST - Media</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-amber-50 rounded-xl">
-          <div class="max-w h-full shadow-lg m-3 px-4 py-4 bg-[white] border-2 text-[#003049] rounded-lg text-center w-auto">
-            <div class="p-4">
-              <i class="fa-solid fa-laptop-code text-[#669BBC] fa-5x mb-6 mx-auto"> </i>
-              <p class="font-bold text-lg text-[#669BBC] md:text-xl pb-8">Programming Language</p>
-              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
-                <span class="block group-hover:hidden">HTML</span>
-                <span id="detail" class="hidden group-hover:block text-[#669BBC] font-sans"> Lihat Detail</span>
+                <span class="detailBtn hidden group-hover:block text-[#780000] font-sans"> See Details</span>
               </p>
 
-              <!-- Modals ERP-->
-              <div id="modal" class="hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto">
+              <!-- Modals UI/UX-->
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
                 <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
                   <div id="modalContent">
                     <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
-                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Campus ERP Project</h2>
-                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Sept 2022 - May 2024</h6>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Study Independent at Startup Campus</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Aug 2022 - Dec 2022</h6>
                     <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
-                      <span class="font-semibold text-[#003049] mr-4">Role :</span>
-                      <ul class="list-disc list-outside text-[#003049]">
-                        <li>Started as staff, supporting system analysis and documentation, and assisting in UI/UX design and testing.</li>
-                        <li class="w-3/5">
-                          From Feb 2023, took full responsibility as the sole Product Designer, handling UI/UX design, bug fixing related to interface and flow,
-                          software testing, documentation, and collaboration with developers.
-                        </li>
-                      </ul>
+                      <span class="font-semibold text-[#003049] mr-4">Role : UI/UX Design</span>
                     </div>
                     <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
                     <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
-                      <li>Designed user interfaces in Figma and documented system modules to guide development.</li>
-                      <li>Analyzed user needs by gathering feedback from lecturers and students to validate requirements.</li>
-                      <li>Collaborated with frontend and backend developers to define product flows and specifications.</li>
-                      <li>Conducted usability and feature testing to ensure the system met initial agreements.</li>
-                      <li>Assisted in fixing UI and system flow issues after development to keep the product running smoothly.</li>
+                      <li>
+                        Created complete UI design assets (UI kits, color palettes, typography, and components) and designed high-fidelity mobile app prototypes
+                        using Figma, focusing on intuitive user flows and visual consistency.
+                      </li>
+                      <li>
+                        Conducted user research and usability testing, then iterated designs based on insights to improve usability and user satisfaction.
+                      </li>
+                      <li>
+                        Worked in an agile setup, actively contributing to sprints and presenting polished design outcomes to industry mentors for feedback.
+                      </li>
+                      <li>Prepared documentation and presentation decks to clearly communicate design rationale and project progress.</li>
                     </ul>
 
-                    <button id="openCertificate" class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer">
+                    <button
+                      id="openCertificate"
+                      data-certificates="src/img/uiux1.jpg,src/img/uiux2.jpg"
+                      class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer"
+                    >
                       View certificate
                     </button>
                   </div>
@@ -187,25 +170,231 @@
               </div>
 
               <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Himaster - Organization Development</span>
+                <span class="detailBtn hidden group-hover:block text-[#780000] font-sans"> See Details</span>
+              </p>
+
+              <!-- Modals Himaster-->
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <div id="modalContent">
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">Himpunan Mahasiswa Ilmu Komputer UNS</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Jan 2021 - Dec 2021</h6>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
+                      <span class="font-semibold text-[#003049] mr-4">Role : Staff of Organization Development</span>
+                    </div>
+                    <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
+                    <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
+                      <li>
+                        Monitored member engagement and divisional activities to ensure alignment with organizational goals and positive internal/external
+                        impact.
+                      </li>
+                      <li>
+                        Worked with team members to develop and implement initiatives that fostered a positive and supportive environment across divisions.
+                      </li>
+                      <li>
+                        Took part in evaluations and team-building initiatives to strengthen inter-division relationships and maintain a cohesive organizational
+                        culture.
+                      </li>
+                    </ul>
+
+                    <button
+                      id="openCertificate"
+                      data-certificates="src/img/himaster1.jpg,src/img/himaster2.jpg"
+                      class="bg-[#4895ef] text-white hover:bg-[#4361ee] font-bold px-4 py-2 rounded shadow-md hover:cursor-pointer"
+                    >
+                      View certificate
+                    </button>
+                  </div>
+                  <div id="modalCertificate" class="hidden justify-center relative">
+                    <i
+                      id="minimize"
+                      class="absolute fa-solid fa-rectangle-xmark top-0 right-0 m-0 p-0 fa-2x text-red-500 hover:text-red-700 hover:cursor-pointer"
+                    ></i>
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                      <i id="prevBtn" class="ri-arrow-left-circle-fill text-gray-600 fa-2x absolute left-0 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                      <i id="nextBtn" class="ri-arrow-right-circle-fill text-gray-600 fa-2x absolute right-2 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">P!NGFEST - Media</span>
+                <span class="detailBtn hidden group-hover:block text-[#780000] font-sans"> See Details</span>
+              </p>
+
+              <!-- Modals P!NGFEST -->
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <div id="modalContent">
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-3xl font-bold text-[#4361ee] mb-4">PINGFEST 2021</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Oct 2021 - Dec 2021</h6>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
+                      <span class="font-semibold text-[#003049] mr-4">Role : Staff of Media Departement</span>
+                    </div>
+                    <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
+                    <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
+                      <li>
+                        Collaborated with the creative team to design visually engaging pamphlets and promotional posters, ensuring consistency with event
+                        themes and branding guidelines.
+                      </li>
+                      <li>Produced marketing materials using Figma and Adobe Photoshop to boost event visibility and audience engagement.</li>
+                      <li>
+                        Created personalized mementos for guest speakers, blending aesthetic presentation with event branding to deliver a professional and
+                        memorable experience.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+              <p class="text-[#C1121F] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">Faculty Reorientation Program - Curriculum</span>
+                <span class="detailBtn hidden group-hover:block text-[#780000] font-sans"> See Details</span>
+              </p>
+
+              <!-- Modals Curriculum -->
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <div id="modalContent">
+                    <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer"></i>
+                    <h2 class="text-2xl font-bold text-[#4361ee] mb-4">Student Reorientation Program - Faculty of Information Technology and Data Science</h2>
+                    <h6 class="text-lg font-bold text-[#4895ef] mb-4">Aug 2022</h6>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-2 mb-2 text-start">
+                      <span class="font-semibold text-[#003049] mr-4">Role : Deputy Head of Curriculum Division</span>
+                    </div>
+                    <p class="text-gray-800 mt-8 mb-2 text-start">Job Description:</p>
+                    <ul class="list-disc text-start px-8 pb-8 text-[#003049]">
+                      <li>
+                        Coordinated with the division head to guide a team of 10 in developing the overall concept and curriculum for the student reorientation
+                        program.
+                      </li>
+                      <li>
+                        Designed, prepared, and evaluated educational and engagement materials to ensure alignment with learning objectives and participant
+                        needs.
+                      </li>
+                      <li>
+                        Developed structured tasks and activities for new students to help them understand the faculty’s academic and organizational culture.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 rounded-xl max-w h-full px-2 pt-2 pb-6">
+          <div class="max-w h-full shadow-lg m-2 px-2 pb-4 bg-[white] border-2 text-[#003049] rounded-lg text-center w-auto">
+            <div class="p-4">
+              <i class="fa-solid fa-laptop-code text-[#669BBC] fa-5x mb-6 mx-auto"> </i>
+              <p class="font-bold text-lg text-[#669BBC] md:text-xl pb-8">Programming Language</p>
+              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
+                <span class="block group-hover:hidden">HTML</span>
+                <span class="certificateBtn hidden group-hover:block text-[#669BBC] font-sans" data-certificates="src/img/html.jpg" data-modal="#modal-html">
+                  View Certificate
+                </span>
+              </p>
+
+              <!-- Modal Html-->
+              <div
+                id="modal-html"
+                class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50"
+              >
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer z-50"></i>
+
+                  <!-- blok sertifikat -->
+                  <div id="modalCertificate" class="justify-center relative hidden">
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#003049] mb-2 w-1/2 mx-auto" />
               <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
                 <span class="block group-hover:hidden">CSS</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+                <span class="certificateBtn hidden group-hover:block text-[#669BBC] font-sans" data-certificates="src/img/css.jpg" data-modal="#modal-css">
+                  View Certificate
+                </span>
               </p>
-              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+
+              <!-- Modal CSS-->
+              <div
+                id="modal-css"
+                class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50"
+              >
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer z-50"></i>
+
+                  <!-- blok sertifikat -->
+                  <div id="modalCertificate" class="justify-center relative hidden">
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#003049] mb-2 w-1/2 mx-auto" />
               <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
                 <span class="block group-hover:hidden">Java Script</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+                <span
+                  class="certificateBtn hidden group-hover:block text-[#669BBC] font-sans"
+                  data-certificates="src/img/js.jpg,src/img/jsOop.jpg,src/img/jsAsyn.jpg,src/img/jsDom.jpg"
+                  data-modal="#modal-js"
+                >
+                  View Certificate
+                </span>
               </p>
-              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
+
+              <!-- Modal Java Script-->
+              <div
+                id="modal-js"
+                class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50"
+              >
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer z-50"></i>
+
+                  <!-- blok sertifikat -->
+                  <div id="modalCertificate" class="justify-center relative hidden">
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                      <i id="prevBtn" class="ri-arrow-left-circle-fill text-gray-600 fa-2x absolute left-0 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                      <i id="nextBtn" class="ri-arrow-right-circle-fill text-gray-600 fa-2x absolute right-2 top-1/2 px-3 py-1 hover:cursor-pointer"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="text-[#003049] mb-2 w-1/2 mx-auto" />
               <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
-                <span class="block group-hover:hidden">PHP</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
+                <span class="block group-hover:hidden">JS Quary</span>
+                <span class="certificateBtn hidden group-hover:block text-[#669BBC] font-sans" data-certificates="src/img/jsQuary.jpg"> View Certificate </span>
               </p>
-              <hr class="text-[#780000] mb-2 w-1/2 mx-auto" />
-              <p class="text-[#669BBC] text-base mb-2 group relative hover:cursor-pointer">
-                <span class="block group-hover:hidden">SQL</span>
-                <span id="detail" class="hidden group-hover:block text-[#780000] font-sans"> Lihat Detail</span>
-              </p>
+
+              <!-- Modal JS Quary-->
+              <div class="modal hidden fixed inset-0 items-center justify-center bg-black/[var(--bg-opacity)] [--bg-opacity:80%] flex p-16 overflow-auto z-50">
+                <div class="bg-[#F9F7F3] rounded-lg p-6 w-2/4 relative max-h-[80vh] overflow-y-auto">
+                  <i id="close" class="absolute fa-solid fa-rectangle-xmark text-red-500 hover:text-red-700 top-2 right-2 fa-2x hover:cursor-pointer z-50"></i>
+
+                  <!-- blok sertifikat -->
+                  <div id="modalCertificate" class="justify-center relative hidden">
+                    <div id="certificateWrapper" class="bg-white rounded-lg pt-12">
+                      <img id="certificateImg" src="" alt="" class="rounded shadow-lg max-h-[70vh] mx-auto" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
